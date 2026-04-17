@@ -7,15 +7,15 @@
 <meta name="description" content="Philippe Fabry, théoricien de l'histoire et auteur de dix ouvrages, intervient en conférence sur la géopolitique, les cycles historiques et les risques systémiques." />
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="icon" type="image/svg+xml" href="philippefabry-site/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="philippefabry-site/favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="philippefabry-site/apple-touch-icon.png" />
 
 <!-- Open Graph / LinkedIn / email previews -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Philippe Fabry — Conférences stratégiques" />
 <meta property="og:description" content="Théoricien de l'histoire. Auteur de dix ouvrages. Intervient en conférence sur la géopolitique, les cycles historiques et les risques systémiques." />
-<meta property="og:image" content="og-image.png" />
+<meta property="og:image" content="philippefabry-site/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="fr_FR" />
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Philippe Fabry — Conférences stratégiques" />
 <meta name="twitter:description" content="Théoricien de l'histoire. Auteur de dix ouvrages. Conférences stratégiques pour directions et institutions." />
-<meta name="twitter:image" content="og-image.png" />
+<meta name="twitter:image" content="philippefabry-site/og-image.png" />
 
 <!-- Google Fonts: IBM Plex Sans (sans-serif institutionnel, lisible, sérieux) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -402,25 +402,30 @@
   }
 
   .logo-cell img {
-    max-height: 52px;
-    max-width: 200px;
+    max-height: 48px;
+    max-width: 180px;
     width: auto;
     height: auto;
     object-fit: contain;
     display: block;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
   }
 
-  /* TV5 Monde displayed 2x larger (circular logo needs more room to read) */
+  .logo-cell:hover img {
+    opacity: 1;
+  }
+
+  /* Circular / square logos get more room */
   .logo-cell--xl img {
-    max-height: 96px;
-    max-width: 280px;
+    max-height: 72px;
+    max-width: 200px;
   }
 
   .logo-cell--xl {
-    height: 120px;
+    height: 100px;
   }
-
-  /* Logo styling - uniform treatment */
 
   @keyframes marqueeScroll {
     from { transform: translateX(0); }
@@ -1055,7 +1060,10 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <a href="#contact" class="cta-small">Inviter Philippe Fabry</a>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <a href="en.html" class="cta-small" style="background:transparent;border:1px solid var(--paper-line);padding:8px 14px;font-size:11px;">EN</a>
+    <a href="#contact" class="cta-small">Inviter Philippe Fabry</a>
+  </div>
 </header>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -1112,11 +1120,11 @@
     <video
       controls
       preload="metadata"
-      poster="sizzle-reel-poster.jpg"
+      poster="philippefabry-site/sizzle-reel-poster.jpg"
       playsinline
       controlslist="nodownload"
       oncontextmenu="return false;">
-      <source src="sizzle-reel.mp4" type="video/mp4" />
+      <source src="philippefabry-site/sizzle-reel.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la lecture vidéo.
     </video>
   </div>
@@ -1133,34 +1141,34 @@
     <div class="marquee-track">
       <!-- Logos x2 (duplicated for seamless loop) -->
       <div class="marquee-group">
-        <div class="logo-cell logo-cell--xl"><img src="logos/tv5monde.png" alt="TV5 Monde" /></div>
-        <div class="logo-cell"><img src="logos/cnews.png" alt="CNEWS" /></div>
-        <div class="logo-cell"><img src="logos/le-figaro.png" alt="Le Figaro" /></div>
-        <div class="logo-cell"><img src="logos/sud-radio.png" alt="Sud Radio" /></div>
-        <div class="logo-cell"><img src="logos/sorbonne.png" alt="Sorbonne Université" /></div>
-        <div class="logo-cell"><img src="logos/ices.png" alt="ICES" /></div>
-        <div class="logo-cell"><img src="logos/marianne.png" alt="Marianne" /></div>
-        <div class="logo-cell"><img src="logos/atlantico.png" alt="Atlantico" /></div>
-        <div class="logo-cell"><img src="logos/lopinion.png" alt="L'Opinion" /></div>
-        <div class="logo-cell"><img src="logos/leman-bleu.png" alt="Léman Bleu" /></div>
-        <div class="logo-cell"><img src="logos/histoire-civilisations.png" alt="Le Monde — Histoire &amp; Civilisations" /></div>
-        <div class="logo-cell"><img src="logos/contrepoints.png" alt="Contrepoints" /></div>
-        <div class="logo-cell"><img src="logos/philosophoire.png" alt="Le Philosophoire" /></div>
+        <div class="logo-cell logo-cell--xl"><img src="philippefabry-site/logos/tv5monde.png" alt="TV5 Monde" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/cnews.png" alt="CNEWS" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/le-figaro.png" alt="Le Figaro" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/sud-radio.png" alt="Sud Radio" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/sorbonne.png" alt="Sorbonne Université" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/ices.png" alt="ICES" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/marianne.png" alt="Marianne" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/atlantico.png" alt="Atlantico" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/lopinion.png" alt="L'Opinion" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/leman-bleu.png" alt="Léman Bleu" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/histoire-civilisations.png" alt="Le Monde — Histoire &amp; Civilisations" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/contrepoints.png" alt="Contrepoints" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/philosophoire.png" alt="Le Philosophoire" /></div>
       </div>
       <div class="marquee-group" aria-hidden="true">
-        <div class="logo-cell logo-cell--xl"><img src="logos/tv5monde.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/cnews.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/le-figaro.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/sud-radio.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/sorbonne.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/ices.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/marianne.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/atlantico.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/lopinion.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/leman-bleu.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/histoire-civilisations.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/contrepoints.png" alt="" /></div>
-        <div class="logo-cell"><img src="logos/philosophoire.png" alt="" /></div>
+        <div class="logo-cell logo-cell--xl"><img src="philippefabry-site/logos/tv5monde.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/cnews.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/le-figaro.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/sud-radio.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/sorbonne.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/ices.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/marianne.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/atlantico.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/lopinion.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/leman-bleu.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/histoire-civilisations.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/contrepoints.png" alt="" /></div>
+        <div class="logo-cell"><img src="philippefabry-site/logos/philosophoire.png" alt="" /></div>
       </div>
     </div>
   </div>
@@ -1653,7 +1661,7 @@
 <footer>
   <div>© CADRAVOX · Philippe Fabry — Conférences stratégiques · 2026</div>
   <div class="legal">
-    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="philippefabry-site/mentions-legales.html">Mentions légales</a>
     <a href="mentions-legales.html#donnees">Données personnelles</a>
   </div>
 </footer>
