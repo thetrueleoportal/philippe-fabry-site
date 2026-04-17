@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Test logos — diagnostic</title>
+<style>
+  body {
+    background: #f3ede0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 40px;
+    margin: 0;
+  }
+  h1 { font-size: 18px; color: #171922; margin-bottom: 8px; }
+  p { color: #585a67; font-size: 14px; margin-bottom: 32px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .cell {
+    background: white;
+    border: 1px solid #ddd3bb;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    gap: 12px;
+  }
+  .cell.dark { background: #171922; }
+  .cell img {
+    max-width: 100%;
+    max-height: 60px;
+    height: auto;
+    width: auto;
+  }
+  .name {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #585a67;
+  }
+  .cell.dark .name { color: #a88a47; }
+  .status {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #585a67;
+  }
+  .status strong { color: #171922; }
+</style>
+</head>
+<body>
+<h1>Page diagnostic logos</h1>
+<p>Si tous les logos ci-dessous apparaissent, ils sont bien uploadés sur Netlify. Sinon il y a un problème de chemin ou d'upload.</p>
+
+<div class="grid">
+  <div class="cell"><img src="logos/tv5monde.png" alt="TV5 Monde" /><div class="name">TV5 Monde</div></div>
+  <div class="cell dark"><img src="logos/cnews.png" alt="CNEWS" /><div class="name">CNEWS</div></div>
+  <div class="cell"><img src="logos/le-figaro.png" alt="Le Figaro" /><div class="name">Le Figaro</div></div>
+  <div class="cell dark"><img src="logos/sud-radio.png" alt="Sud Radio" /><div class="name">Sud Radio</div></div>
+  <div class="cell"><img src="logos/sorbonne.png" alt="Sorbonne" /><div class="name">Sorbonne</div></div>
+  <div class="cell"><img src="logos/ices.png" alt="ICES" /><div class="name">ICES</div></div>
+  <div class="cell"><img src="logos/marianne.png" alt="Marianne" /><div class="name">Marianne</div></div>
+  <div class="cell"><img src="logos/atlantico.png" alt="Atlantico" /><div class="name">Atlantico</div></div>
+  <div class="cell"><img src="logos/lopinion.png" alt="L'Opinion" /><div class="name">L'Opinion</div></div>
+  <div class="cell dark"><img src="logos/leman-bleu.png" alt="Léman Bleu" /><div class="name">Léman Bleu</div></div>
+  <div class="cell"><img src="logos/histoire-civilisations.png" alt="Histoire &amp; Civilisations" /><div class="name">H&amp;C</div></div>
+  <div class="cell dark"><img src="logos/contrepoints.png" alt="Contrepoints" /><div class="name">Contrepoints</div></div>
+  <div class="cell dark"><img src="logos/philosophoire.png" alt="Philosophoire" /><div class="name">Philosophoire</div></div>
+</div>
+
+<div class="status" id="status">Chargement…</div>
+
+<script>
+  window.addEventListener('load', () => {
+    const images = document.querySelectorAll('img');
+    let loaded = 0, failed = 0;
+    const failures = [];
+    images.forEach(img => {
+      if (img.complete && img.naturalWidth > 0) {
+        loaded++;
+      } else {
+        failed++;
+        failures.push(img.src);
+      }
+    });
+    const status = document.getElementById('status');
+    if (failed === 0) {
+      status.innerHTML = `<strong>✅ Tous les ${loaded} logos chargent correctement.</strong><br/>Le dossier /logos/ est bien accessible.`;
+    } else {
+      status.innerHTML = `<strong>❌ ${failed} logos sur ${images.length} ne chargent pas.</strong><br/>Échecs :<br/>` + failures.join('<br/>');
+    }
+  });
+</script>
+</body>
+</html>

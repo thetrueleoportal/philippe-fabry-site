@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap');
+      .mono { font-family: 'Fraunces', Georgia, serif; font-weight: 500; font-style: italic; }
+    ]]></style>
+  </defs>
+
+  <!-- Ink background, rounded -->
+  <rect width="64" height="64" rx="10" fill="#171922"/>
+
+  <!-- Oxblood accent bar at bottom -->
+  <rect x="0" y="58" width="64" height="6" fill="#8a2a1c"/>
+
+  <!-- PF monogram -->
+  <text x="32" y="44" class="mono" font-size="34" fill="#f3ede0" text-anchor="middle" letter-spacing="-1">
+    PF
+  </text>
+</svg>

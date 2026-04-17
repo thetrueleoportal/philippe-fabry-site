@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Philippe Fabry — Conférences stratégiques</title>
+<meta name="description" content="Philippe Fabry, théoricien de l'histoire et auteur de dix ouvrages, intervient en conférence sur la géopolitique, les cycles historiques et les risques systémiques." />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+<!-- Open Graph / LinkedIn / email previews -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Philippe Fabry — Conférences stratégiques" />
+<meta property="og:description" content="Théoricien de l'histoire. Auteur de dix ouvrages. Intervient en conférence sur la géopolitique, les cycles historiques et les risques systémiques." />
+<meta property="og:image" content="og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="fr_FR" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Philippe Fabry — Conférences stratégiques" />
+<meta name="twitter:description" content="Théoricien de l'histoire. Auteur de dix ouvrages. Conférences stratégiques pour directions et institutions." />
+<meta name="twitter:image" content="og-image.png" />
+
+<!-- Google Fonts: IBM Plex Sans (sans-serif institutionnel, lisible, sérieux) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swapfamily=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ivory: #f3ede0;
+    --ivory-deep: #ebe3d2;
+    --ink: #171922;
+    --ink-soft: #2b2d3a;
+    --ink-mute: #585a67;
+    --oxblood: #8a2a1c;
+    --oxblood-dim: #6b1f13;
+    --gold: #a88a47;
+    --paper-line: #c8bea6;
+    --paper-line-light: #ddd3bb;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--ivory);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ── Paper grain overlay ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  h1, h2, h3, h4, .display {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ═══════════════════════════════════════════ */
+  /* HEADER */
+  /* ═══════════════════════════════════════════ */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 20px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+    background: linear-gradient(to bottom, var(--ivory) 70%, transparent);
+    backdrop-filter: blur(6px);
+    mix-blend-mode: normal;
+  }
+
+  .logo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+  }
+  .logo em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-mute);
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  nav a { color: var(--ink-soft); transition: color 0.2s; }
+  nav a:hover { color: var(--oxblood); }
+
+  .cta-small {
+    padding: 10px 22px;
+    border: 1px solid var(--ink);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .cta-small:hover {
+    background: var(--ink);
+    color: var(--ivory);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* HERO */
+  /* ═══════════════════════════════════════════ */
+  .hero {
+    min-height: 100vh;
+    padding: 140px 48px 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-overline {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .hero-overline::before {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--ink-mute);
+  }
+
+  /* The prediction-as-hero */
+  .prediction-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .prediction-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+  }
+
+  .prediction-column::before {
+    content: '';
+    position: absolute;
+    left: -24px; top: 0; bottom: 0;
+    width: 1px;
+    background: var(--paper-line);
+  }
+
+  .year-tag {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--oxblood);
+    letter-spacing: 0.02em;
+  }
+
+  .prediction-quote {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  .prediction-quote em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+
+  .prediction-source {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 12px;
+  }
+
+  .hero-statement {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    max-width: 1100px;
+    color: var(--ink);
+  }
+  .hero-statement em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+
+  .hero-sub {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin-top: 40px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 48px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--ink);
+    color: var(--ivory);
+    padding: 18px 36px;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  .btn-primary:hover {
+    background: var(--oxblood);
+    transform: translateY(-1px);
+  }
+  .btn-primary .arrow { transition: transform 0.3s; }
+  .btn-primary:hover .arrow { transform: translateX(4px); }
+
+  .btn-ghost {
+    color: var(--ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--ink-soft);
+    padding-bottom: 4px;
+    transition: all 0.2s;
+  }
+  .btn-ghost:hover { color: var(--oxblood); border-color: var(--oxblood); }
+
+  /* ═══════════════════════════════════════════ */
+  /* SECTION FRAME */
+  /* ═══════════════════════════════════════════ */
+  section {
+    padding: 120px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .section-number {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--oxblood);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    max-width: 900px;
+    margin-bottom: 24px;
+    font-weight: 400;
+  }
+  .section-title em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+
+  .section-lede {
+    max-width: 680px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 60px;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* VIDEO SECTION */
+  /* ═══════════════════════════════════════════ */
+  .video-section {
+    padding: 60px 48px 80px;
+  }
+  .video-wrap {
+    position: relative;
+    aspect-ratio: 16/9;
+    background: var(--ink);
+    overflow: hidden;
+    box-shadow: 0 40px 80px -20px rgba(23, 25, 34, 0.35);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .video-wrap iframe, .video-wrap video {
+    width: 100%; height: 100%;
+    border: 0;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* MEDIA LOGOS — Infinite marquee on dark band   */
+  /* ═══════════════════════════════════════════ */
+  .media-marquee {
+    background: var(--ivory);
+    max-width: none;
+    padding: 70px 0 90px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(168, 138, 71, 0.2);
+    border-bottom: 1px solid rgba(168, 138, 71, 0.2);
+  }
+
+  .media-marquee-header {
+    max-width: 1400px;
+    margin: 0 auto 48px;
+    padding: 0 48px;
+    text-align: center;
+  }
+  .media-marquee-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .media-marquee-label::before,
+  .media-marquee-label::after {
+    content: '';
+    width: 48px; height: 1px;
+    background: rgba(168, 138, 71, 0.4);
+  }
+
+  .marquee-viewport {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marqueeScroll 70s linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  .marquee-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .logo-cell {
+    flex-shrink: 0;
+    padding: 0 36px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-cell img {
+    max-height: 52px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* TV5 Monde displayed 2x larger (circular logo needs more room to read) */
+  .logo-cell--xl img {
+    max-height: 96px;
+    max-width: 280px;
+  }
+
+  .logo-cell--xl {
+    height: 120px;
+  }
+
+  /* Logo styling - uniform treatment */
+
+  @keyframes marqueeScroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* PREDICTIONS SECTION */
+  /* ═══════════════════════════════════════════ */
+  .predictions-section {
+    background: var(--ink);
+    color: var(--ivory);
+    max-width: none;
+    padding: 120px 48px;
+  }
+  .predictions-inner { max-width: 1400px; margin: 0 auto; }
+
+  .predictions-section .section-number { color: var(--gold); }
+  .predictions-section .section-title { color: var(--ivory); }
+  .predictions-section .section-title em { color: var(--gold); }
+  .predictions-section .section-lede { color: rgba(243, 237, 224, 0.75); }
+
+  .predictions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-top: 40px;
+  }
+
+  .prediction-card {
+    position: relative;
+    padding: 32px 0;
+    border-top: 1px solid rgba(168, 138, 71, 0.4);
+  }
+
+  .prediction-card .date {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--gold);
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  .prediction-card .forecast {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 1.3;
+    color: var(--ivory);
+    margin-bottom: 28px;
+  }
+
+  .prediction-card .outcome-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .prediction-card .outcome {
+    font-size: 15px;
+    line-height: 1.55;
+    color: rgba(243, 237, 224, 0.85);
+  }
+
+  .prediction-card .source {
+    margin-top: 20px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(243, 237, 224, 0.45);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* METHOD SECTION */
+  /* ═══════════════════════════════════════════ */
+  .method-section {
+    padding: 160px 48px;
+  }
+
+  .method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+  }
+
+  .method-etymology {
+    position: sticky;
+    top: 120px;
+    padding: 48px;
+    background: var(--ivory-deep);
+    border: 1px solid var(--paper-line-light);
+  }
+
+  .etymology-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--paper-line-light);
+  }
+  .etymology-item:last-child { border-bottom: 0; }
+
+  .etymology-term {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .etymology-term.accent { color: var(--oxblood); }
+
+  .etymology-def {
+    font-size: 14px;
+    color: var(--ink-mute);
+  }
+
+  .method-body p {
+    font-size: 18px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+
+  .method-body .pullquote {
+    margin: 48px 0;
+    padding-left: 24px;
+    border-left: 2px solid var(--oxblood);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .method-body .pullquote cite {
+    display: block;
+    margin-top: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* THEMES SECTION */
+  /* ═══════════════════════════════════════════ */
+  .themes-section { padding: 160px 48px; }
+
+  .themes-list {
+    margin-top: 60px;
+    border-top: 1px solid var(--ink);
+  }
+
+  .theme {
+    display: grid;
+    grid-template-columns: 80px 1fr 320px;
+    gap: 48px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--paper-line);
+    align-items: start;
+    transition: background 0.3s;
+  }
+  .theme:hover { background: var(--ivory-deep); padding-left: 24px; padding-right: 24px; }
+
+  .theme-num {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 3.5rem;
+    color: var(--oxblood);
+    line-height: 1;
+  }
+
+  .theme-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .theme-desc {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .theme-audience {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--ink-mute);
+  }
+  .theme-audience-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--oxblood);
+    margin-bottom: 10px;
+  }
+  .theme-audience ul { list-style: none; }
+  .theme-audience li { padding: 4px 0; }
+
+  /* ═══════════════════════════════════════════ */
+  /* SPEAKER SECTION */
+  /* ═══════════════════════════════════════════ */
+  .speaker-section {
+    background: var(--ivory-deep);
+    max-width: none;
+    padding: 160px 48px;
+  }
+  .speaker-inner { max-width: 1400px; margin: 0 auto; }
+
+  .speaker-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .bio-text p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+  .bio-text p:first-of-type::first-letter {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4.5rem;
+    float: left;
+    line-height: 0.85;
+    padding-right: 12px;
+    padding-top: 8px;
+    color: var(--oxblood);
+  }
+
+  .books {
+    margin-top: 48px;
+  }
+  .books-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 20px;
+  }
+  .books-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .books-list li {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink);
+    padding-left: 16px;
+    position: relative;
+  }
+  .books-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--oxblood);
+  }
+
+  .media-list {
+    padding-top: 24px;
+    border-top: 1px solid var(--paper-line);
+  }
+  .media-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 16px;
+  }
+  .media-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .media-items span { position: relative; }
+  .media-items span:not(:last-child)::after {
+    content: '·';
+    position: absolute;
+    right: -24px;
+    color: var(--oxblood);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* REFERENCES SECTION */
+  /* ═══════════════════════════════════════════ */
+  .refs-section { padding: 160px 48px; }
+
+  .refs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+    margin-top: 60px;
+  }
+
+  .ref-card {
+    padding: 40px 0;
+    border-top: 1px solid var(--paper-line);
+    position: relative;
+  }
+
+  .ref-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: -8px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 5rem;
+    color: var(--oxblood);
+    opacity: 0.15;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .ref-quote {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ref-source {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .ref-source strong {
+    font-weight: 600;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .ref-source span {
+    color: var(--ink-mute);
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* FORMAT SECTION */
+  /* ═══════════════════════════════════════════ */
+  .format-section {
+    background: var(--ink);
+    color: var(--ivory);
+    max-width: none;
+    padding: 140px 48px;
+  }
+  .format-inner { max-width: 1400px; margin: 0 auto; }
+
+  .format-section .section-number { color: var(--gold); }
+  .format-section .section-title { color: var(--ivory); }
+  .format-section .section-lede { color: rgba(243, 237, 224, 0.75); }
+
+  .format-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    margin-top: 60px;
+    border-left: 1px solid rgba(168, 138, 71, 0.3);
+    border-top: 1px solid rgba(168, 138, 71, 0.3);
+  }
+
+  .format-item {
+    padding: 40px 32px;
+    border-right: 1px solid rgba(168, 138, 71, 0.3);
+    border-bottom: 1px solid rgba(168, 138, 71, 0.3);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .format-item .key {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+  }
+
+  .format-item .value {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    color: var(--ivory);
+  }
+
+  .format-item .detail {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(243, 237, 224, 0.7);
+    margin-top: auto;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* CONTACT SECTION */
+  /* ═══════════════════════════════════════════ */
+  .contact-section {
+    padding: 180px 48px 140px;
+  }
+
+  .contact-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 40px;
+    letter-spacing: -0.025em;
+  }
+  .contact-title em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+
+  .contact-sub {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 560px;
+    margin: 0 auto 56px;
+  }
+
+  .contact-form {
+    text-align: left;
+    max-width: 640px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .field label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 10px;
+  }
+
+  .field input, .field textarea, .field select {
+    width: 100%;
+    padding: 14px 18px;
+    background: transparent;
+    border: 1px solid var(--paper-line);
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+
+  .field input:focus, .field textarea:focus, .field select:focus {
+    outline: none;
+    border-color: var(--oxblood);
+  }
+
+  .field textarea { resize: vertical; min-height: 120px; }
+
+  .form-submit {
+    background: var(--ink);
+    color: var(--ivory);
+    border: 0;
+    padding: 20px;
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 12px;
+  }
+  .form-submit:hover { background: var(--oxblood); }
+
+  .contact-direct {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--paper-line);
+    font-size: 14px;
+    color: var(--ink-mute);
+  }
+  .contact-direct a {
+    color: var(--oxblood);
+    border-bottom: 1px solid var(--oxblood);
+    padding-bottom: 2px;
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* FOOTER */
+  /* ═══════════════════════════════════════════ */
+  footer {
+    border-top: 1px solid var(--paper-line);
+    padding: 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  footer .legal a { margin-left: 24px; }
+  footer .legal a:hover { color: var(--oxblood); }
+
+  /* ═══════════════════════════════════════════ */
+  /* ANIMATIONS */
+  /* ═══════════════════════════════════════════ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-overline, .hero-statement, .hero-sub, .hero-actions, .prediction-block {
+    animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+  .hero-overline { animation-delay: 0.05s; }
+  .prediction-block { animation-delay: 0.15s; }
+  .hero-statement { animation-delay: 0.3s; }
+  .hero-sub { animation-delay: 0.5s; }
+  .hero-actions { animation-delay: 0.65s; }
+
+  /* Fade on scroll (handled via IntersectionObserver below) */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.3, 1),
+                transform 0.9s cubic-bezier(0.2, 0.7, 0.3, 1);
+    /* Fallback: force visibility after 2.5s in case JS fails or is blocked */
+    animation: fadeInFallback 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) 2.5s forwards;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+  }
+  @keyframes fadeInFallback {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ═══════════════════════════════════════════ */
+  /* RESPONSIVE */
+  /* ═══════════════════════════════════════════ */
+  @media (max-width: 900px) {
+    header { padding: 16px 24px; }
+    nav { display: none; }
+
+    .hero { padding: 120px 24px 60px; }
+    .prediction-block { grid-template-columns: 1fr; gap: 48px; margin-bottom: 48px; }
+
+    section { padding: 80px 24px; }
+    .predictions-section, .speaker-section, .format-section { padding: 80px 24px; }
+    .method-section, .themes-section, .refs-section, .contact-section { padding: 80px 24px; }
+
+    .predictions-grid { grid-template-columns: 1fr; gap: 24px; }
+    .method-grid, .speaker-grid { grid-template-columns: 1fr; gap: 48px; }
+    .method-etymology { position: static; padding: 32px; }
+
+    .theme { grid-template-columns: 1fr; gap: 20px; padding: 40px 0; }
+    .theme:hover { padding: 40px 0; background: transparent; }
+
+    .refs-grid { grid-template-columns: 1fr; gap: 32px; }
+
+    .format-grid { grid-template-columns: 1fr 1fr; }
+
+    .form-row { grid-template-columns: 1fr; }
+
+    footer { flex-direction: column; text-align: center; }
+  }
+
+  @media (max-width: 600px) {
+    .format-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- HEADER                                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="logo">Philippe Fabry <em>— Conférences</em></div>
+  <nav>
+    <ul>
+      <li><a href="#predictions">Anticipations</a></li>
+      <li><a href="#methode">Méthode</a></li>
+      <li><a href="#themes">Thématiques</a></li>
+      <li><a href="#intervenant">L'intervenant</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#contact" class="cta-small">Inviter Philippe Fabry</a>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- HERO : la prédiction Ukraine en centerpiece                        -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-overline">Conférences stratégiques · Géopolitique · Cycles historiques</div>
+
+  <div class="prediction-block">
+    <div class="prediction-column">
+      <span class="year-tag">Décembre 2021</span>
+      <p class="prediction-quote">
+        « La Russie va envahir <em>une partie de l'Ukraine</em> dans un délai relativement bref,
+        d'ici six mois au maximum. »
+      </p>
+      <div class="prediction-source">Philippe Fabry · Twitter, 18 décembre 2021</div>
+    </div>
+    <div class="prediction-column">
+      <span class="year-tag">Février 2022</span>
+      <p class="prediction-quote">
+        Invasion russe de l'Ukraine.<br/>
+        <em>Début de la plus grande guerre européenne</em> depuis 1945.
+      </p>
+      <div class="prediction-source">Récit validé en direct sur CNEWS, TV5 Monde, Léman Bleu</div>
+    </div>
+  </div>
+
+  <h1 class="hero-statement">
+    Anticiper les grandes transformations <em>par les lois de l'histoire</em>.
+  </h1>
+
+  <p class="hero-sub">
+    Philippe Fabry est historien du droit, avocat et auteur de dix ouvrages. Il a développé
+    l'<em>historionomie</em> — une méthode scientifique d'analyse des cycles historiques qui
+    permet de comprendre, et d'anticiper, les grandes transformations politiques,
+    géopolitiques et institutionnelles. Il intervient en conférence auprès des directions
+    stratégiques, sociétés de gestion, think tanks et grandes écoles.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#contact" class="btn-primary">
+      Organiser une conférence
+      <span class="arrow">→</span>
+    </a>
+    <a href="#themes" class="btn-ghost">Découvrir les thématiques</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- VIDEO                                                              -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="video-section">
+  <div class="video-wrap">
+    <video
+      controls
+      preload="metadata"
+      poster="sizzle-reel-poster.jpg"
+      playsinline
+      controlslist="nodownload"
+      oncontextmenu="return false;">
+      <source src="sizzle-reel.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- MEDIA LOGOS — Infinite marquee on dark band                        -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="media-marquee">
+  <div class="media-marquee-header">
+    <div class="media-marquee-label">Interventions médiatiques et académiques</div>
+  </div>
+  <div class="marquee-viewport">
+    <div class="marquee-track">
+      <!-- Logos x2 (duplicated for seamless loop) -->
+      <div class="marquee-group">
+        <div class="logo-cell logo-cell--xl"><img src="logos/tv5monde.png" alt="TV5 Monde" /></div>
+        <div class="logo-cell"><img src="logos/cnews.png" alt="CNEWS" /></div>
+        <div class="logo-cell"><img src="logos/le-figaro.png" alt="Le Figaro" /></div>
+        <div class="logo-cell"><img src="logos/sud-radio.png" alt="Sud Radio" /></div>
+        <div class="logo-cell"><img src="logos/sorbonne.png" alt="Sorbonne Université" /></div>
+        <div class="logo-cell"><img src="logos/ices.png" alt="ICES" /></div>
+        <div class="logo-cell"><img src="logos/marianne.png" alt="Marianne" /></div>
+        <div class="logo-cell"><img src="logos/atlantico.png" alt="Atlantico" /></div>
+        <div class="logo-cell"><img src="logos/lopinion.png" alt="L'Opinion" /></div>
+        <div class="logo-cell"><img src="logos/leman-bleu.png" alt="Léman Bleu" /></div>
+        <div class="logo-cell"><img src="logos/histoire-civilisations.png" alt="Le Monde — Histoire &amp; Civilisations" /></div>
+        <div class="logo-cell"><img src="logos/contrepoints.png" alt="Contrepoints" /></div>
+        <div class="logo-cell"><img src="logos/philosophoire.png" alt="Le Philosophoire" /></div>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <div class="logo-cell logo-cell--xl"><img src="logos/tv5monde.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/cnews.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/le-figaro.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/sud-radio.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/sorbonne.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/ices.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/marianne.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/atlantico.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/lopinion.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/leman-bleu.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/histoire-civilisations.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/contrepoints.png" alt="" /></div>
+        <div class="logo-cell"><img src="logos/philosophoire.png" alt="" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- PREDICTIONS / TRACK RECORD                                         -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="predictions-section fade-in" id="predictions">
+  <div class="predictions-inner">
+    <div class="section-number"><em>I. — Le précédent</em></div>
+    <h2 class="section-title">
+      Un travail d'<em>anticipation</em> vérifié par les faits.
+    </h2>
+    <p class="section-lede">
+      Les modèles historiques ne prédisent pas l'avenir avec la précision d'une science
+      exacte. Ils permettent, cependant, d'identifier les trajectoires probables des
+      puissances politiques et des transformations institutionnelles. Trois exemples parmi
+      les travaux publiés de Philippe Fabry.
+    </p>
+
+    <div class="predictions-grid">
+      <div class="prediction-card">
+        <div class="date">2019</div>
+        <p class="forecast">
+          La Russie envahira l'Ukraine avant 2025, après avoir soumis la Biélorussie.
+        </p>
+        <div class="outcome-label">Advenu</div>
+        <p class="outcome">
+          La Biélorussie bascule sous la tutelle de Moscou fin 2020. L'invasion russe
+          débute en février 2022. Prévision confirmée en direct sur TV5 Monde.
+        </p>
+        <div class="source">Atlas des guerres à venir · 2017</div>
+      </div>
+
+      <div class="prediction-card">
+        <div class="date">2010</div>
+        <p class="forecast">
+          L'Union européenne entrera dans une phase de crise de légitimité conduisant à
+          un processus révolutionnaire.
+        </p>
+        <div class="outcome-label">En cours</div>
+        <p class="outcome">
+          Crise institutionnelle européenne, montée des forces souverainistes, tensions
+          internes permanentes depuis 2016. Trajectoire conforme au modèle de chute
+          des empires.
+        </p>
+        <div class="source">La Chute de l'Empire européen · 2e éd. 2023</div>
+      </div>
+
+      <div class="prediction-card">
+        <div class="date">2022</div>
+        <p class="forecast">
+          Les États-Unis entrent dans une phase césariste — ni fascisme, ni populisme
+          classique, mais une reconfiguration profonde de l'État impérial.
+        </p>
+        <div class="outcome-label">Advenu</div>
+        <p class="outcome">
+          Second mandat Trump marqué par un exécutif fort, une redéfinition des
+          alliances et une reconfiguration administrative caractéristique du modèle.
+        </p>
+        <div class="source">Hail Caesars! Du césarisme en Amérique · 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- METHOD / HISTORIONOMIE                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="method-section fade-in" id="methode">
+  <div class="section-number"><em>II. — La méthode</em></div>
+  <h2 class="section-title">
+    L'<em>historionomie</em>, ou l'histoire traitée comme une science.
+  </h2>
+
+  <div class="method-grid">
+    <div class="method-etymology">
+      <div class="etymology-item">
+        <span class="etymology-term">astronomie</span>
+        <span class="etymology-def">la science des lois qui régissent les astres</span>
+      </div>
+      <div class="etymology-item">
+        <span class="etymology-term">économie</span>
+        <span class="etymology-def">la science des lois qui régissent les échanges</span>
+      </div>
+      <div class="etymology-item">
+        <span class="etymology-term accent">historionomie</span>
+        <span class="etymology-def">la science des lois qui régissent les trajectoires historiques</span>
+      </div>
+    </div>
+
+    <div class="method-body">
+      <p>
+        Là où l'historien classique cherche la spécificité d'une époque, l'historionomie
+        procède à l'inverse : elle identifie les <em>récurrences</em>, bâtit des
+        <em>modèles</em>, et catégorise les trajectoires politiques (construction des
+        États-nations, formation et chute des empires, phases démocratiques et
+        révolutionnaires).
+      </p>
+      <p>
+        C'est une démarche empirique, cumulative, qui suit la méthode scientifique
+        standard : observation, hypothèse, vérification, réfutation, révision. Elle
+        s'inscrit dans la tradition de l'histoire longue de Fernand Braudel, dont
+        Philippe Fabry revendique l'héritage.
+      </p>
+
+      <blockquote class="pullquote">
+        « Il s'agit d'aller chercher les lois de l'histoire, de dégager des modèles, de
+        théoriser l'histoire de la même manière qu'on théorise l'astronomie ou
+        l'économie. »
+        <cite>Philippe Fabry — CNEWS, 2025</cite>
+      </blockquote>
+
+      <p>
+        Pour un dirigeant, cette méthode offre ce qu'aucun commentaire d'actualité ne peut
+        produire : une grille de lecture <em>structurelle</em>, à long terme, des
+        transformations en cours. Là où la prospective traditionnelle extrapole des
+        tendances, l'historionomie s'appuie sur la répétition observable des dynamiques
+        historiques pour identifier ce qui est probable, ce qui est contingent, et ce qui
+        relève du bruit.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- THEMES                                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="themes-section fade-in" id="themes">
+  <div class="section-number"><em>III. — Les thématiques</em></div>
+  <h2 class="section-title">
+    Quatre conférences, <em>adaptables sur mesure</em> à votre organisation.
+  </h2>
+  <p class="section-lede">
+    Chaque intervention — 60 à 90 minutes, suivie de 30 minutes de questions — est
+    construite sur la base d'échanges préalables avec les organisateurs. Les thématiques
+    ci-dessous sont les plus fréquemment demandées, mais tous les sujets liés à l'histoire
+    longue, aux cycles politiques et aux transformations géopolitiques peuvent être traités.
+  </p>
+
+  <div class="themes-list">
+    <article class="theme">
+      <div class="theme-num">01</div>
+      <div>
+        <h3 class="theme-title">Les modèles historiques de crise.</h3>
+        <p class="theme-desc">
+          Ce que les cycles de l'histoire nous disent de la prochaine décennie.
+          Identification des phases récurrentes de transformation politique, économique
+          et géopolitique — et des trajectoires probables à l'horizon 2030-2035.
+        </p>
+      </div>
+      <div class="theme-audience">
+        <div class="theme-audience-label">Particulièrement adapté pour</div>
+        <ul>
+          <li>Comités de direction et comex</li>
+          <li>Séminaires stratégiques</li>
+          <li>Conventions annuelles cadres</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="theme">
+      <div class="theme-num">02</div>
+      <div>
+        <h3 class="theme-title">Géopolitique et risques systémiques.</h3>
+        <p class="theme-desc">
+          La grille de lecture historionomique appliquée aux décisions d'investissement
+          et d'allocation. Cycles de puissance, déclin des empires, reconfigurations
+          régionales : identifier les zones de rupture avant qu'elles ne soient cotées.
+        </p>
+      </div>
+      <div class="theme-audience">
+        <div class="theme-audience-label">Particulièrement adapté pour</div>
+        <ul>
+          <li>Sociétés de gestion, asset managers</li>
+          <li>Family offices</li>
+          <li>Directions du risque et de la stratégie</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="theme">
+      <div class="theme-num">03</div>
+      <div>
+        <h3 class="theme-title">L'Europe face à l'effondrement.</h3>
+        <p class="theme-desc">
+          Diagnostic de la phase impériale européenne et des scénarios de sortie. Entre
+          crise de légitimité et processus révolutionnaire : les trajectoires historiques
+          comparables, et ce qu'elles suggèrent pour la prochaine décennie européenne.
+        </p>
+      </div>
+      <div class="theme-audience">
+        <div class="theme-audience-label">Particulièrement adapté pour</div>
+        <ul>
+          <li>Think tanks et institutions</li>
+          <li>Grandes écoles et universités</li>
+          <li>Directions des affaires publiques</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="theme">
+      <div class="theme-num">04</div>
+      <div>
+        <h3 class="theme-title">La mécanique de l'innovation civilisationnelle.</h3>
+        <p class="theme-desc">
+          Pourquoi les empires meurent et les civilisations renaissent. Une analyse
+          historionomique des cycles d'innovation, de conservatisme et de rupture, et des
+          conditions structurelles qui favorisent — ou tuent — les phases créatives.
+        </p>
+      </div>
+      <div class="theme-audience">
+        <div class="theme-audience-label">Particulièrement adapté pour</div>
+        <ul>
+          <li>Comités d'innovation et R&D</li>
+          <li>Directions de la transformation</li>
+          <li>Écoles d'ingénieurs et de commerce</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- SPEAKER                                                            -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="speaker-section fade-in" id="intervenant">
+  <div class="speaker-inner">
+    <div class="section-number"><em>IV. — L'intervenant</em></div>
+    <h2 class="section-title">
+      Philippe Fabry.
+    </h2>
+
+    <div class="speaker-grid">
+      <div class="bio-text">
+        <p>
+          Avocat au barreau de Toulouse et historien du droit de formation, Philippe Fabry
+          a consacré quinze ans de recherche à théoriser l'histoire comme discipline
+          scientifique. Disciple revendiqué de Fernand Braudel et de l'école des Annales,
+          il a construit le corpus de l'historionomie à travers dix ouvrages publiés —
+          des études historiques classiques (Rome, la France, l'Europe) jusqu'aux travaux
+          de théorie historique appliquée (<em>Atlas des guerres à venir</em>, <em>Histoire
+          du Siècle à venir</em>).
+        </p>
+        <p>
+          Ses analyses sont régulièrement sollicitées par les médias nationaux et
+          internationaux (TV5 Monde, CNEWS, Sud Radio, Léman Bleu, Le Figaro), et son
+          travail est suivi par une communauté professionnelle de conseillers en
+          investissement, analystes géopolitiques, cadres de la défense et étudiants en
+          sciences politiques.
+        </p>
+        <p>
+          Il intervient en conférence depuis 2018, notamment à la Sorbonne, à l'Institut
+          Catholique d'Études Supérieures (ICES), et auprès de structures privées.
+        </p>
+
+        <div class="books">
+          <div class="books-label">Ouvrages publiés — sélection</div>
+          <ul class="books-list">
+            <li>Hail Caesars! Du césarisme en Amérique — 2025</li>
+            <li>La Chute de l'Empire européen — 2e édition, 2023</li>
+            <li>Atlas des guerres à venir — 2022</li>
+            <li>Rome, du libéralisme au socialisme — 2e édition, 2021</li>
+            <li>Histoire du siècle à venir — 7e édition</li>
+            <li>Le Président absolu. La Ve République contre la démocratie</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <div class="media-list">
+          <div class="media-label">Interventions médiatiques récentes</div>
+          <div class="media-items">
+            <span>TV5 Monde</span>
+            <span>CNEWS</span>
+            <span>Sud Radio</span>
+            <span>Léman Bleu</span>
+            <span>Face à Bock-Côté</span>
+            <span>Sorbonne</span>
+            <span>ICES</span>
+            <span>Cercle Bastiat</span>
+            <span>Le Figaro</span>
+          </div>
+        </div>
+
+        <div class="media-list" style="margin-top:48px;">
+          <div class="media-label">Conférences et colloques</div>
+          <div class="media-items">
+            <span>Sorbonne — Individu et société</span>
+            <span>ICES — Les empires et leurs politiques autodestructrices</span>
+            <span>Cercle Bastiat — Du positivisme juridique</span>
+            <span>Colloque « Comprendre le phénomène écologie »</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- REFERENCES                                                         -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="refs-section fade-in">
+  <div class="section-number"><em>V. — Références</em></div>
+  <h2 class="section-title">
+    Ils ont fait intervenir <em>Philippe Fabry</em>.
+  </h2>
+  <p class="section-lede">
+    Quelques retours d'organisateurs et de participants sur ses conférences passées.
+  </p>
+
+  <div class="refs-grid">
+    <!--
+      ═══════════════════════════════════════════════════════════════
+      À PERSONNALISER PAR LEO :
+      Remplacer les citations et les noms des organisations ci-dessous
+      par les vrais témoignages recueillis. Garder la même structure.
+      ═══════════════════════════════════════════════════════════════
+    -->
+    <div class="ref-card">
+      <p class="ref-quote">
+        [Témoignage 1 — 2 à 3 phrases d'un organisateur ou d'un participant sur
+        la qualité de la conférence, la clarté du propos, l'impact sur
+        l'auditoire.]
+      </p>
+      <div class="ref-source">
+        <strong>[Nom · Fonction]</strong>
+        <span>[Organisation · Date]</span>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <p class="ref-quote">
+        [Témoignage 2 — idéalement centré sur la valeur stratégique de
+        l'intervention pour l'organisation.]
+      </p>
+      <div class="ref-source">
+        <strong>[Nom · Fonction]</strong>
+        <span>[Organisation · Date]</span>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <p class="ref-quote">
+        [Témoignage 3 — mettre en avant l'originalité du propos, la capacité
+        de Philippe à connecter l'histoire à l'actualité.]
+      </p>
+      <div class="ref-source">
+        <strong>[Nom · Fonction]</strong>
+        <span>[Organisation · Date]</span>
+      </div>
+    </div>
+
+    <div class="ref-card">
+      <p class="ref-quote">
+        [Témoignage 4 — idéalement d'un public académique ou institutionnel
+        pour renforcer la légitimité.]
+      </p>
+      <div class="ref-source">
+        <strong>[Nom · Fonction]</strong>
+        <span>[Organisation · Date]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- FORMAT                                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="format-section fade-in">
+  <div class="format-inner">
+    <div class="section-number"><em>VI. — Modalités</em></div>
+    <h2 class="section-title">
+      Une intervention sur mesure, <em>en présentiel ou à distance</em>.
+    </h2>
+    <p class="section-lede">
+      Chaque conférence est préparée spécifiquement pour l'organisation qui la reçoit.
+      Les thématiques sont adaptées, les références choisies en fonction du secteur, et
+      la durée ajustée au format retenu.
+    </p>
+
+    <div class="format-grid">
+      <div class="format-item">
+        <div class="key">Format</div>
+        <div class="value">60 à 90 minutes</div>
+        <div class="detail">Conférence, suivie de 30 minutes d'échanges avec l'audience.</div>
+      </div>
+      <div class="format-item">
+        <div class="key">Lieu</div>
+        <div class="value">France, Europe</div>
+        <div class="detail">Présentiel privilégié. Interventions internationales possibles en visio haute définition.</div>
+      </div>
+      <div class="format-item">
+        <div class="key">Préparation</div>
+        <div class="value">Sur mesure</div>
+        <div class="detail">Échange préalable avec les organisateurs pour caler thématique, angle et références sectorielles.</div>
+      </div>
+      <div class="format-item">
+        <div class="key">Disponibilité</div>
+        <div class="value">8 à 12 semaines</div>
+        <div class="detail">Délai moyen entre première prise de contact et intervention. Planifications longues possibles.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- CONTACT                                                            -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<section class="contact-section fade-in" id="contact">
+  <div class="contact-inner">
+    <div class="section-number" style="display:inline-block;"><em>VII. — Contact</em></div>
+    <h1 class="contact-title">
+      Organiser une conférence <em>Philippe Fabry</em>.
+    </h1>
+    <p class="contact-sub">
+      Décrivez-nous brièvement votre projet — format, thématique envisagée, date approximative,
+      contexte. Nous revenons vers vous sous 48 heures ouvrées.
+    </p>
+
+    <!--
+      ═══════════════════════════════════════════════════════════════
+      FORMULAIRE : Compatible Netlify Forms (activation automatique
+      lors du déploiement sur Netlify via l'attribut data-netlify).
+      Fallback : les infos arrivent aussi par mailto sur submit.
+      ═══════════════════════════════════════════════════════════════
+    -->
+    <form class="contact-form" name="conference-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <p style="display:none;"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+      <input type="hidden" name="form-name" value="conference-request" />
+
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="role">Fonction</label>
+          <input type="text" id="role" name="role" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="org">Organisation</label>
+          <input type="text" id="org" name="organization" required />
+        </div>
+        <div class="field">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="theme">Thématique envisagée</label>
+          <select id="theme" name="theme">
+            <option value="">— Sélectionner —</option>
+            <option>01 · Modèles historiques de crise</option>
+            <option>02 · Géopolitique et risques systémiques</option>
+            <option>03 · L'Europe face à l'effondrement</option>
+            <option>04 · Mécanique de l'innovation</option>
+            <option>Autre / sujet sur mesure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Date approximative</label>
+          <input type="text" id="date" name="date" placeholder="Ex. 3e trimestre 2026" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="message">Contexte, format, audience</label>
+        <textarea id="message" name="message" placeholder="Quelques lignes sur votre événement, l'audience attendue, et tout élément utile."></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">Envoyer la demande →</button>
+    </form>
+
+    <div class="contact-direct">
+      Ou directement par email : <a href="mailto:leo@cadravox.fr?subject=Demande%20de%20conf%C3%A9rence%20%E2%80%94%20Philippe%20Fabry">leo@cadravox.fr</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- FOOTER                                                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<footer>
+  <div>© CADRAVOX · Philippe Fabry — Conférences stratégiques · 2026</div>
+  <div class="legal">
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="mentions-legales.html#donnees">Données personnelles</a>
+  </div>
+</footer>
+
+<script>
+  // ── Scroll fade-in animations ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // ── Smooth scroll offset for sticky header ──
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        const pos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: pos, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

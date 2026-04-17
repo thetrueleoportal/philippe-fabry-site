@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mentions légales — Philippe Fabry Conférences</title>
+<meta name="description" content="Mentions légales et politique de confidentialité du site philippefabry.com" />
+<meta name="robots" content="noindex" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ivory: #f3ede0;
+    --ivory-deep: #ebe3d2;
+    --ink: #171922;
+    --ink-soft: #2b2d3a;
+    --ink-mute: #585a67;
+    --oxblood: #8a2a1c;
+    --paper-line: #c8bea6;
+    --paper-line-light: #ddd3bb;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--ivory);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  h1, h2, h3 {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  /* Header */
+  header {
+    padding: 20px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--paper-line-light);
+  }
+  .logo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .logo em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-mute);
+  }
+  .back-link {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+  }
+  .back-link:hover {
+    border-bottom-color: var(--oxblood);
+    color: var(--oxblood);
+  }
+
+  /* Main */
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 80px 48px 120px;
+  }
+
+  .page-overline {
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .page-overline::before {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--ink-mute);
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    margin-bottom: 20px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--oxblood);
+  }
+
+  .lede {
+    font-size: 17px;
+    color: var(--ink-mute);
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--paper-line);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-top: 56px;
+    margin-bottom: 20px;
+    color: var(--ink);
+    padding-top: 20px;
+  }
+  h2 .num {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--oxblood);
+    margin-right: 12px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: var(--ink-soft);
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    margin-bottom: 16px;
+    color: var(--ink-soft);
+  }
+
+  ul, ol {
+    margin: 16px 0 20px 24px;
+    color: var(--ink-soft);
+  }
+  li { margin-bottom: 8px; }
+
+  .info-block {
+    background: var(--ivory-deep);
+    border-left: 3px solid var(--oxblood);
+    padding: 24px 28px;
+    margin: 24px 0;
+  }
+  .info-block p { margin-bottom: 8px; }
+  .info-block p:last-child { margin-bottom: 0; }
+  .info-block strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  a.link {
+    color: var(--oxblood);
+    border-bottom: 1px solid var(--oxblood);
+    padding-bottom: 1px;
+  }
+  a.link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+  .placeholder {
+    background: #fff8dc;
+    border: 1px dashed var(--oxblood);
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: var(--oxblood);
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--paper-line);
+    padding: 40px 48px;
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--ink-mute);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  footer a { color: var(--oxblood); }
+
+  @media (max-width: 720px) {
+    header { padding: 16px 24px; }
+    main { padding: 60px 24px 80px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Philippe Fabry <em>— Conférences</em></div>
+  <a href="" class="back-link">← Retour</a>
+</header>
+
+<main>
+  <div class="page-overline">Informations légales</div>
+  <h1>Mentions <em>légales</em>.</h1>
+  <p class="lede">
+    Dernière mise à jour : vendredi 17 avril 2026.
+    Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la Confiance
+    dans l'Économie Numérique (LCEN), et au Règlement Général sur la Protection des Données
+    (RGPD n° 2016/679).
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">I.</span> Éditeur du site</h2>
+  <p>
+    Le présent site est édité par :
+  </p>
+
+  <div class="info-block">
+    <p><strong>CADRAVOX</strong>, Société par Actions Simplifiée Unipersonnelle (SASU)</p>
+    <p>Capital social : 500 €</p>
+    <p>Siège social : 25 avenue Bertrand Barère, 65000 Tarbes, France</p>
+    <p>RCS de Tarbes — SIREN : 984 260 075</p>
+    <p>N° TVA intracommunautaire : FR36 984 260 075</p>
+    <p>Président et directeur de la publication : Léo Portal</p>
+    <p>Contact : <a href="mailto:leo@cadravox.fr" class="link">leo@cadravox.fr</a></p>
+    <p>Téléphone : 07 83 12 86 63</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">II.</span> Hébergement</h2>
+  <p>
+    Le site est hébergé par :
+  </p>
+  <div class="info-block">
+    <p><strong>Netlify, Inc.</strong></p>
+    <p>512 2nd Street, Suite 200, San Francisco, CA 94107, États-Unis</p>
+    <p>Contact : <a href="mailto:support@netlify.com" class="link">support@netlify.com</a></p>
+    <p>Site : <a href="https://www.netlify.com" class="link" target="_blank" rel="noopener">netlify.com</a></p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">III.</span> Activité et objet du site</h2>
+  <p>
+    La société CADRAVOX exerce une activité de conseil en communication,
+    de production audiovisuelle et de prestations de services associées. Dans ce cadre,
+    elle assure la commercialisation et la contractualisation d'interventions en
+    conférence de Monsieur Philippe Fabry, historien du droit et théoricien de
+    l'historionomie.
+  </p>
+  <p>
+    Le présent site <span class="placeholder">[URL DU SITE]</span> a pour objet la
+    présentation de ces interventions et la mise en relation commerciale avec les
+    organisations souhaitant inviter Monsieur Philippe Fabry à intervenir dans leurs
+    événements. Les conférences proposées font l'objet de prestations de services
+    facturées par la société CADRAVOX, qui en assure la contractualisation et la
+    délivrance en collaboration avec Monsieur Philippe Fabry.
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">IV.</span> Propriété intellectuelle</h2>
+
+  <h3>Contenus du site</h3>
+  <p>
+    L'ensemble des éléments du site (textes, structures, graphismes, codes sources) est la
+    propriété de la société CADRAVOX ou fait l'objet d'une autorisation d'usage. Toute
+    reproduction, représentation ou diffusion, intégrale ou partielle, sans autorisation
+    écrite préalable, est strictement interdite et constituerait une contrefaçon
+    sanctionnée par les articles L.335-2 et suivants du Code de la Propriété Intellectuelle.
+  </p>
+
+  <h3>Ouvrages et travaux de Philippe Fabry</h3>
+  <p>
+    Les citations, extraits d'ouvrages et références aux travaux publiés de Monsieur
+    Philippe Fabry sont utilisés avec son autorisation. Les livres mentionnés sur ce
+    site demeurent la propriété exclusive de leurs éditeurs respectifs.
+  </p>
+
+  <h3>Extraits médiatiques</h3>
+  <p>
+    Les extraits d'interventions médiatiques (TV5 Monde, CNEWS, Sud Radio, Léman Bleu,
+    Le Figaro et autres) utilisés à des fins de présentation relèvent du droit de
+    courte citation prévu à l'article L.122-5 3° du Code de la Propriété Intellectuelle.
+    Ces contenus restent la propriété de leurs ayants droit respectifs, qui sont cités
+    nommément à chaque utilisation. Toute demande de retrait peut être adressée à
+    l'éditeur du site, qui y fera droit sans délai.
+  </p>
+
+  <h3>Logos de tiers</h3>
+  <p>
+    Les logos des médias et institutions affichés sur le site le sont à titre purement
+    éditorial, pour documenter les interventions passées de Philippe Fabry. Ils demeurent
+    la propriété exclusive de leurs titulaires respectifs et ne sauraient être interprétés
+    comme un partenariat, une affiliation ou une recommandation de la part desdites
+    entités.
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2 id="donnees"><span class="num">V.</span> Données personnelles</h2>
+
+  <h3>Responsable du traitement</h3>
+  <p>
+    Le responsable du traitement des données personnelles collectées sur le site est la
+    société CADRAVOX, représentée par son président, Monsieur Léo Portal.
+  </p>
+
+  <h3>Données collectées</h3>
+  <p>
+    Les données personnelles collectées via le formulaire de contact sont les suivantes :
+  </p>
+  <ul>
+    <li>Nom et prénom</li>
+    <li>Fonction occupée</li>
+    <li>Nom de l'organisation</li>
+    <li>Adresse email professionnelle</li>
+    <li>Date approximative envisagée pour l'intervention</li>
+    <li>Informations relatives au projet communiquées dans le champ libre</li>
+  </ul>
+
+  <h3>Finalités du traitement</h3>
+  <p>
+    Les données collectées sont utilisées exclusivement pour :
+  </p>
+  <ul>
+    <li>Répondre aux demandes d'information et de devis relatives aux conférences</li>
+    <li>Établir une proposition commerciale adaptée au besoin exprimé</li>
+    <li>Assurer le suivi de la relation commerciale en cas de contractualisation</li>
+  </ul>
+
+  <h3>Base légale</h3>
+  <p>
+    Les traitements reposent sur l'<strong>intérêt légitime</strong> du responsable de
+    traitement à répondre aux sollicitations commerciales entrantes, et sur le
+    <strong>consentement explicite</strong> de la personne concernée, matérialisé par
+    l'envoi volontaire du formulaire de contact (article 6.1.a et 6.1.f du RGPD).
+  </p>
+
+  <h3>Destinataires des données</h3>
+  <p>
+    Les données collectées sont traitées par la société CADRAVOX et peuvent être
+    communiquées, le cas échéant, à Monsieur Philippe Fabry pour la préparation des
+    interventions. Elles sont traitées via les outils suivants, qui agissent en qualité
+    de sous-traitants au sens du RGPD :
+  </p>
+  <ul>
+    <li><strong>Netlify, Inc.</strong> — hébergement du site et des formulaires
+      (<a href="https://www.netlify.com/privacy/" class="link" target="_blank" rel="noopener">politique de confidentialité</a>)</li>
+    <li><strong>Instantly Software, Inc.</strong> — gestion des séquences d'emails de
+      suivi commercial (<a href="https://instantly.ai/privacy" class="link" target="_blank" rel="noopener">politique de confidentialité</a>)</li>
+  </ul>
+
+  <h3>Durée de conservation</h3>
+  <p>
+    Les données personnelles sont conservées pendant une durée de <strong>3 ans à
+    compter du dernier contact</strong> avec la personne concernée, conformément aux
+    recommandations de la CNIL en matière de prospection commerciale B2B. Passé ce délai,
+    elles sont supprimées ou anonymisées.
+  </p>
+
+  <h3>Droits des personnes concernées</h3>
+  <p>
+    Conformément aux articles 15 à 22 du RGPD, toute personne dispose des droits suivants
+    sur ses données personnelles :
+  </p>
+  <ul>
+    <li>Droit d'accès à ses données</li>
+    <li>Droit de rectification</li>
+    <li>Droit à l'effacement</li>
+    <li>Droit à la limitation du traitement</li>
+    <li>Droit d'opposition</li>
+    <li>Droit à la portabilité</li>
+    <li>Droit de définir des directives post-mortem relatives à ses données</li>
+  </ul>
+  <p>
+    Ces droits peuvent être exercés à tout moment en adressant une demande à :
+    <a href="mailto:leo@cadravox.fr" class="link">leo@cadravox.fr</a>.
+    Une réponse sera apportée dans un délai maximum d'un mois.
+  </p>
+  <p>
+    En cas de difficulté non résolue, toute personne peut introduire une réclamation
+    auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong>,
+    3 Place de Fontenoy, 75007 Paris —
+    <a href="https://www.cnil.fr" class="link" target="_blank" rel="noopener">cnil.fr</a>.
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">VI.</span> Cookies et traceurs</h2>
+  <p>
+    Le site ne dépose <strong>aucun cookie de mesure d'audience tiers</strong> ni aucun
+    traceur publicitaire. La vidéo de présentation est intégrée via le domaine
+    <code>youtube-nocookie.com</code>, qui ne dépose de cookies qu'en cas de lecture
+    effective de la vidéo par l'utilisateur.
+  </p>
+  <p>
+    Seuls des cookies techniques strictement nécessaires au fonctionnement du formulaire
+    de contact (protection anti-spam via le service Netlify Forms) peuvent être
+    temporairement déposés. Ces cookies sont exemptés de consentement préalable
+    conformément aux recommandations de la CNIL.
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">VII.</span> Droit applicable et juridiction</h2>
+  <p>
+    Les présentes mentions légales sont régies par le droit français. En cas de litige
+    et à défaut de résolution amiable, les tribunaux français seront seuls compétents.
+  </p>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <h2><span class="num">VIII.</span> Contact</h2>
+  <p>
+    Pour toute question relative aux présentes mentions légales ou à l'utilisation de
+    vos données personnelles, vous pouvez contacter l'éditeur du site :
+  </p>
+  <div class="info-block">
+    <p><strong>CADRAVOX</strong></p>
+    <p>25 avenue Bertrand Barère, 65000 Tarbes, France</p>
+    <p>Email : <a href="mailto:leo@cadravox.fr" class="link">leo@cadravox.fr</a></p>
+    <p>Téléphone : 07 83 12 86 63</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© CADRAVOX — <a href="">philippefabry.com</a></p>
+</footer>
+
+</body>
+</html>
